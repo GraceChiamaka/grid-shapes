@@ -1,0 +1,143 @@
+.homepage-wrapper {
+	.filter-containter {
+		padding: 2rem 4rem;
+
+		h3 {
+			color: #020122;
+			font-weight: 600;
+			font-size: 24px;
+		}
+		.shapes-filter {
+			margin-top: 1rem;
+			.heading {
+				color: #858ae3;
+				font-size: 18px;
+			}
+			.shapes {
+				display: flex;
+				margin-top: 1rem;
+			}
+		}
+		.color-filter {
+			margin-top: 2rem;
+			.heading {
+				color: #858ae3;
+				font-size: 18px;
+			}
+			.colors {
+				display: flex;
+				margin-top: 1rem;
+			}
+		}
+	}
+	.homepage-content {
+		background: rgba(233, 230, 255, 0.4);
+		min-height: calc(100vh - 63px);
+
+		.alert-container {
+			width: 65%;
+			margin: auto;
+			padding: 1rem;
+		}
+
+		.shape-display-container {
+			padding: 0 4rem;
+
+			.heading {
+				margin: 2rem 0 1rem 0;
+				font-weight: 700;
+			}
+			.shape-content {
+				width: 70%;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+	}
+	.custom-checkbox {
+		position: relative;
+		margin-right: 1rem;
+		width: 100px;
+		.checkbox-input {
+			display: inline-flex;
+			position: absolute;
+			opacity: 0;
+			height: 30px;
+			z-index: 100;
+			left: 0;
+			top: 0;
+			width: 100px;
+			cursor: pointer;
+		}
+		.checkbox-alt {
+			border-radius: 20px;
+			margin-right: 2rem;
+			border: 1px solid #ddd;
+			width: 100px;
+			height: 30px;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+			font-size: 16px;
+			cursor: pointer;
+			&:hover {
+				border: 0.5px solid #48639c;
+			}
+		}
+		.checkbox-alt.active-checkbox {
+			background: rgba(72, 99, 156, 0.4);
+		}
+	}
+	.colors-checkbox {
+		position: relative;
+		margin-right: 1rem;
+		width: 35px;
+		.checkbox-input {
+			display: inline-flex;
+			position: absolute;
+			opacity: 0;
+			width: 35px;
+			height: 35px;
+			z-index: 100;
+			left: 0;
+			top: 0;
+			cursor: pointer;
+		}
+		.checkbox-alt {
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			cursor: pointer;
+			margin-right: 1rem;
+			z-index: 10;
+			font-size: 16px;
+			cursor: pointer;
+			&:hover {
+				border: 0.5px solid #48639c;
+			}
+		}
+		.checkbox-alt.red {
+			background: #ef3e36;
+		}
+		.checkbox-alt.blue {
+			background: #48639c;
+		}
+		.checkbox-alt.purple {
+			background: #858ae3;
+		}
+		.checkbox-alt.gray {
+			background: #eaebed;
+		}
+		.checkbox-alt.green {
+			background: #61e786;
+		}
+		.checkbox-alt.yellow {
+			background: #e3d26f;
+		}
+		.checkbox-alt.active-checkbox {
+			box-shadow: 0 2px 3px 1px rgba(72, 99, 156, 0.6);
+		}
+	}
+}
