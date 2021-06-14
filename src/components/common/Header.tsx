@@ -15,6 +15,7 @@ const Header = () => {
 			<div>
 				{isLoggedIn ? (
 					<button
+						title="log out"
 						data-testid="logout-btn"
 						onClick={() => {
 							logout();
@@ -23,7 +24,11 @@ const Header = () => {
 						<img src={ExitIcon} alt="log out icon" />
 					</button>
 				) : (
-					<button data-testid="login-btn" onClick={() => updateModalState()}>
+					<button
+						title="log in"
+						data-testid="login-btn"
+						onClick={() => updateModalState()}
+					>
 						<img src={userIcon} alt="" />
 					</button>
 				)}
